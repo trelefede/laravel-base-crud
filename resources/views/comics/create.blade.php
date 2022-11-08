@@ -33,7 +33,7 @@
         </div>
         <div>
             <label for="type">Tipo:</label>
-            <input type="text" name="Type">
+            <input type="text" name="type">
         </div>
         <div>
             <label for="description">Descrizione:</label>
