@@ -14,6 +14,9 @@
             <a href="{{ route('comics.show', $comic->id) }}"> {{ $comic->title }} </a>
         </div>
     @endforeach
+    <div>
+        <a href=" {{ route('comics.create') }} ">Aggiungi nuovo fumetto</a>
+    </div>
 </body>
 
 </html>
