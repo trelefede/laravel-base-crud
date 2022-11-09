@@ -11,7 +11,8 @@
 <body>
     @foreach ($comics as $comic)
         <div>
-            <a href="{{ route('comics.show', $comic->id) }}"> {{ $comic->title }} </a>
+            <a href="{{ route('comics.show', $comic->id) }}"> {{ $comic->title }} </a> <br>
+            <a href="{{ route('comics.edit', $comic->id) }}"> Modifica </a>
             {{-- delete  --}}
             <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                 @csrf
