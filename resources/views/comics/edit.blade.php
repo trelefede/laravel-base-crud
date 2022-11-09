@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form method="POST" action="{{ route('comics.edit', $comic->id) }}">
+    <form method="POST" action="{{ route('comics.update', $comic->id) }}">
         @csrf
         @method('PUT')
         <div>
