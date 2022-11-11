@@ -13,27 +13,27 @@
         @csrf
         <div>
             <label for="title">Titolo:</label>
-            <input type="text" name="title">
+            <input type="text" name="title" required maxlength="100">
         </div>
         <div>
             <label for="sale_date">Data uscita:</label>
-            <input type="text" name="sale_date">
+            <input type="date" name="sale_date" required>
         </div>
         <div>
             <label for="thumb">Url immagine:</label>
-            <input type="text" name="thumb">
+            <input type="text" name="thumb" required maxlength="255">
         </div>
         <div>
             <label for="price">Prezzo:</label>
-            <input type="number" name="price">
+            <input type="number" name="price" required max="999999.99">
         </div>
         <div>
             <label for="series">Serie:</label>
-            <input type="text" name="series">
+            <input type="text" name="series" required maxlength="100">
         </div>
         <div>
             <label for="type">Tipo:</label>
-            <input type="text" name="type">
+            <input type="text" name="type" required maxlength="50">
         </div>
         <div>
             <label for="description">Descrizione:</label>
