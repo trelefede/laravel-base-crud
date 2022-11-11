@@ -15,42 +15,42 @@
             <label for="title">Titolo:</label>
             <input type="text" name="title" required maxlength="100">
             @error('title')
-                <span class="is-invalid">Testo troppo lungo o assente</span>
+                <span class="is-invalid">{{ __('Testo troppo lungo o assente') }}</span>
             @enderror
         </div>
         <div>
             <label for="sale_date">Data uscita:</label>
             <input type="date" name="sale_date" required>
-            @error('title')
-                <span class="is-invalid">Data inserita non valida</span>
+            @error('sale_date')
+                <span class="is-invalid">{{ __('Data inserita non valida') }}</span>
             @enderror
         </div>
         <div>
             <label for="thumb">Url immagine:</label>
             <input type="text" name="thumb" required maxlength="255">
-            @error('title')
-                <span class="is-invalid">Url non valido</span>
+            @error('thumb')
+                <span class="is-invalid">{{ __('Url non valido') }}</span>
             @enderror
         </div>
         <div>
             <label for="price">Prezzo:</label>
             <input type="number" name="price" required max="999999.99">
-            @error('title')
-                <span class="is-invalid">Prezzo non valido</span>
+            @error('price')
+                <span class="is-invalid">{{ __('Prezzo non valido') }}</span>
             @enderror
         </div>
         <div>
             <label for="series">Serie:</label>
             <input type="text" name="series" required maxlength="100">
-            @error('title')
-                <span class="is-invalid">Testo inserito troppo lungo</span>
+            @error('series')
+                <span class="is-invalid">{{ __('Testo inserito troppo lungo') }}</span>
             @enderror
         </div>
         <div>
             <label for="type">Tipo:</label>
             <input type="text" name="type" required maxlength="50">
-            @error('title')
-                <span class="is-invalid">Testo troppo lungo</span>
+            @error('type')
+                <span class="is-invalid">{{ __('Testo troppo lungo') }}</span>
             @enderror
         </div>
         <div>
